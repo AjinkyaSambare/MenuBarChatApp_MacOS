@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		178E7F812D02DD0300E56955 /* MenuBarChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7F802D02DD0300E56955 /* MenuBarChatAppApp.swift */; };
+		178E7F832D02DD0300E56955 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7F822D02DD0300E56955 /* ContentView.swift */; };
+		178E7F852D02DD0600E56955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E7F842D02DD0600E56955 /* Assets.xcassets */; };
+		178E7F882D02DD0600E56955 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E7F872D02DD0600E56955 /* Preview Assets.xcassets */; };
+		178E7F932D02DD0700E56955 /* MenuBarChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7F922D02DD0700E56955 /* MenuBarChatAppTests.swift */; };
+		178E7F9D2D02DD0700E56955 /* MenuBarChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7F9C2D02DD0700E56955 /* MenuBarChatAppUITests.swift */; };
+		178E7F9F2D02DD0700E56955 /* MenuBarChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7F9E2D02DD0700E56955 /* MenuBarChatAppUITestsLaunchTests.swift */; };
+		178E7FAC2D02DE0A00E56955 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7FAB2D02DE0A00E56955 /* ChatViewModel.swift */; };
+		178E7FAE2D02DE3200E56955 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7FAD2D02DE3200E56955 /* Message.swift */; };
+		178E7FB02D02DE5F00E56955 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7FAF2D02DE5F00E56955 /* MessageBubble.swift */; };
+		178E7FB22D02DE8400E56955 /* AzureOpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7FB12D02DE8400E56955 /* AzureOpenAIService.swift */; };
+		17E70B412D06203600A4A564 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17E70B402D06203600A4A564 /* config.plist */; };
+		17E70B432D0621BE00A4A564 /* example.config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17E70B422D0621BE00A4A564 /* example.config.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		178E7F8F2D02DD0700E56955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E7F752D02DD0300E56955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 178E7F7C2D02DD0300E56955;
+			remoteInfo = MenuBarChatApp;
+		};
+		178E7F992D02DD0700E56955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178E7F752D02DD0300E56955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 178E7F7C2D02DD0300E56955;
+			remoteInfo = MenuBarChatApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		178E7F7D2D02DD0300E56955 /* MenuBarChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		178E7F802D02DD0300E56955 /* MenuBarChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarChatAppApp.swift; sourceTree = "<group>"; };
+		178E7F822D02DD0300E56955 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		178E7F842D02DD0600E56955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		178E7F872D02DD0600E56955 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		178E7F892D02DD0600E56955 /* MenuBarChatApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarChatApp.entitlements; sourceTree = "<group>"; };
+		178E7F8E2D02DD0700E56955 /* MenuBarChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		178E7F922D02DD0700E56955 /* MenuBarChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarChatAppTests.swift; sourceTree = "<group>"; };
+		178E7F982D02DD0700E56955 /* MenuBarChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		178E7F9C2D02DD0700E56955 /* MenuBarChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarChatAppUITests.swift; sourceTree = "<group>"; };
+		178E7F9E2D02DD0700E56955 /* MenuBarChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		178E7FAB2D02DE0A00E56955 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		178E7FAD2D02DE3200E56955 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		178E7FAF2D02DE5F00E56955 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		178E7FB12D02DE8400E56955 /* AzureOpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureOpenAIService.swift; sourceTree = "<group>"; };
+		17E70B402D06203600A4A564 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		17E70B422D0621BE00A4A564 /* example.config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = example.config.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		178E7F7A2D02DD0300E56955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F8B2D02DD0700E56955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F952D02DD0700E56955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178E7F742D02DD0300E56955 = {
+			isa = PBXGroup;
+			children = (
+				178E7F7F2D02DD0300E56955 /* MenuBarChatApp */,
+				178E7F912D02DD0700E56955 /* MenuBarChatAppTests */,
+				178E7F9B2D02DD0700E56955 /* MenuBarChatAppUITests */,
+				178E7F7E2D02DD0300E56955 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		178E7F7E2D02DD0300E56955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178E7F7D2D02DD0300E56955 /* MenuBarChatApp.app */,
+				178E7F8E2D02DD0700E56955 /* MenuBarChatAppTests.xctest */,
+				178E7F982D02DD0700E56955 /* MenuBarChatAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178E7F7F2D02DD0300E56955 /* MenuBarChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				178E7F802D02DD0300E56955 /* MenuBarChatAppApp.swift */,
+				178E7F822D02DD0300E56955 /* ContentView.swift */,
+				178E7F842D02DD0600E56955 /* Assets.xcassets */,
+				178E7FAB2D02DE0A00E56955 /* ChatViewModel.swift */,
+				178E7FAF2D02DE5F00E56955 /* MessageBubble.swift */,
+				17E70B402D06203600A4A564 /* config.plist */,
+				178E7FB12D02DE8400E56955 /* AzureOpenAIService.swift */,
+				178E7FAD2D02DE3200E56955 /* Message.swift */,
+				178E7F892D02DD0600E56955 /* MenuBarChatApp.entitlements */,
+				178E7F862D02DD0600E56955 /* Preview Content */,
+				17E70B422D0621BE00A4A564 /* example.config.plist */,
+			);
+			path = MenuBarChatApp;
+			sourceTree = "<group>";
+		};
+		178E7F862D02DD0600E56955 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				178E7F872D02DD0600E56955 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		178E7F912D02DD0700E56955 /* MenuBarChatAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				178E7F922D02DD0700E56955 /* MenuBarChatAppTests.swift */,
+			);
+			path = MenuBarChatAppTests;
+			sourceTree = "<group>";
+		};
+		178E7F9B2D02DD0700E56955 /* MenuBarChatAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				178E7F9C2D02DD0700E56955 /* MenuBarChatAppUITests.swift */,
+				178E7F9E2D02DD0700E56955 /* MenuBarChatAppUITestsLaunchTests.swift */,
+			);
+			path = MenuBarChatAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		178E7F7C2D02DD0300E56955 /* MenuBarChatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178E7FA22D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatApp" */;
+			buildPhases = (
+				178E7F792D02DD0300E56955 /* Sources */,
+				178E7F7A2D02DD0300E56955 /* Frameworks */,
+				178E7F7B2D02DD0300E56955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuBarChatApp;
+			productName = MenuBarChatApp;
+			productReference = 178E7F7D2D02DD0300E56955 /* MenuBarChatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		178E7F8D2D02DD0700E56955 /* MenuBarChatAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178E7FA52D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatAppTests" */;
+			buildPhases = (
+				178E7F8A2D02DD0700E56955 /* Sources */,
+				178E7F8B2D02DD0700E56955 /* Frameworks */,
+				178E7F8C2D02DD0700E56955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				178E7F902D02DD0700E56955 /* PBXTargetDependency */,
+			);
+			name = MenuBarChatAppTests;
+			productName = MenuBarChatAppTests;
+			productReference = 178E7F8E2D02DD0700E56955 /* MenuBarChatAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		178E7F972D02DD0700E56955 /* MenuBarChatAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178E7FA82D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatAppUITests" */;
+			buildPhases = (
+				178E7F942D02DD0700E56955 /* Sources */,
+				178E7F952D02DD0700E56955 /* Frameworks */,
+				178E7F962D02DD0700E56955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				178E7F9A2D02DD0700E56955 /* PBXTargetDependency */,
+			);
+			name = MenuBarChatAppUITests;
+			productName = MenuBarChatAppUITests;
+			productReference = 178E7F982D02DD0700E56955 /* MenuBarChatAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		178E7F752D02DD0300E56955 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					178E7F7C2D02DD0300E56955 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					178E7F8D2D02DD0700E56955 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 178E7F7C2D02DD0300E56955;
+					};
+					178E7F972D02DD0700E56955 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 178E7F7C2D02DD0300E56955;
+					};
+				};
+			};
+			buildConfigurationList = 178E7F782D02DD0300E56955 /* Build configuration list for PBXProject "MenuBarChatApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 178E7F742D02DD0300E56955;
+			productRefGroup = 178E7F7E2D02DD0300E56955 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				178E7F7C2D02DD0300E56955 /* MenuBarChatApp */,
+				178E7F8D2D02DD0700E56955 /* MenuBarChatAppTests */,
+				178E7F972D02DD0700E56955 /* MenuBarChatAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		178E7F7B2D02DD0300E56955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178E7F882D02DD0600E56955 /* Preview Assets.xcassets in Resources */,
+				178E7F852D02DD0600E56955 /* Assets.xcassets in Resources */,
+				17E70B432D0621BE00A4A564 /* example.config.plist in Resources */,
+				17E70B412D06203600A4A564 /* config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F8C2D02DD0700E56955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F962D02DD0700E56955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178E7F792D02DD0300E56955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178E7F832D02DD0300E56955 /* ContentView.swift in Sources */,
+				178E7FAE2D02DE3200E56955 /* Message.swift in Sources */,
+				178E7FB02D02DE5F00E56955 /* MessageBubble.swift in Sources */,
+				178E7FAC2D02DE0A00E56955 /* ChatViewModel.swift in Sources */,
+				178E7F812D02DD0300E56955 /* MenuBarChatAppApp.swift in Sources */,
+				178E7FB22D02DE8400E56955 /* AzureOpenAIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F8A2D02DD0700E56955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178E7F932D02DD0700E56955 /* MenuBarChatAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178E7F942D02DD0700E56955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178E7F9D2D02DD0700E56955 /* MenuBarChatAppUITests.swift in Sources */,
+				178E7F9F2D02DD0700E56955 /* MenuBarChatAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		178E7F902D02DD0700E56955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 178E7F7C2D02DD0300E56955 /* MenuBarChatApp */;
+			targetProxy = 178E7F8F2D02DD0700E56955 /* PBXContainerItemProxy */;
+		};
+		178E7F9A2D02DD0700E56955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 178E7F7C2D02DD0300E56955 /* MenuBarChatApp */;
+			targetProxy = 178E7F992D02DD0700E56955 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		178E7FA02D02DD0700E56955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		178E7FA12D02DD0700E56955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		178E7FA32D02DD0700E56955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MenuBarChatApp/MenuBarChatApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MenuBarChatApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		178E7FA42D02DD0700E56955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MenuBarChatApp/MenuBarChatApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MenuBarChatApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		178E7FA62D02DD0700E56955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarChatApp";
+			};
+			name = Debug;
+		};
+		178E7FA72D02DD0700E56955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarChatApp";
+			};
+			name = Release;
+		};
+		178E7FA92D02DD0700E56955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MenuBarChatApp;
+			};
+			name = Debug;
+		};
+		178E7FAA2D02DD0700E56955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = idealabs.MenuBarChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MenuBarChatApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		178E7F782D02DD0300E56955 /* Build configuration list for PBXProject "MenuBarChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178E7FA02D02DD0700E56955 /* Debug */,
+				178E7FA12D02DD0700E56955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178E7FA22D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178E7FA32D02DD0700E56955 /* Debug */,
+				178E7FA42D02DD0700E56955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178E7FA52D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178E7FA62D02DD0700E56955 /* Debug */,
+				178E7FA72D02DD0700E56955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178E7FA82D02DD0700E56955 /* Build configuration list for PBXNativeTarget "MenuBarChatAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178E7FA92D02DD0700E56955 /* Debug */,
+				178E7FAA2D02DD0700E56955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 178E7F752D02DD0300E56955 /* Project object */;
+}
