@@ -139,7 +139,7 @@ The app securely loads the Azure OpenAI Service API key from a `config.plist` fi
 
 Here's what the app looks like:
 
-<img src="https://via.placeholder.com/300x400" alt="MenuBarChatApp Screenshot" width="400"/>
+<img src="https://github.com/AjinkyaSambare/MenuBarChatApp_MacOS/blob/main/image.png" alt="MenuBarChatApp Screenshot" width="400"/>
 
 ## Known Issues
 - Ensure your API key and endpoint are correctly configured.
